@@ -2,7 +2,7 @@ require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
   cart.each do |cart_item|
-    # Check if the item is found in coupons
+    
     discount_item = find_item_by_name_in_collection(cart_item[:item], coupons)
     if discount_item
       cart_item[:count] -= discount_item[:num]
